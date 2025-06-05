@@ -5,6 +5,8 @@ import AboutUs from "../Components/AboutUs";
 import ChoiceUs from "../Components/ChoiceUs";
 import choiceimg from "../assets/Images/choiceimg2.jpg";
 import CallAction from "../Components/CallAction";
+import VisionMission from "../Components/VisionMission";
+import StepWork from "../Components/StepWork";
 
 const listData = [
 	"24 Hour Consultation",
@@ -28,6 +30,8 @@ function About() {
 				page="ABOUT US"
 			/>
 			<AboutUs />
+			<VisionMission />
+			<StepWork />
 			<ChoiceUs
 				title="Kami Memberikan Hasil Layanan Terbaik Untuk Apartemen Anda"
 				img2={choiceimg}

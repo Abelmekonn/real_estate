@@ -5,18 +5,18 @@ import { PiPlayCircle } from "react-icons/pi";
 function Gallery({ bgImg, galimg3, galimg2, galimg5, galimg4, galimg6 }) {
 	return (
 		<div>
-			<div className=" w-8/10 mx-auto flex flex-col py-18 gap-y-5">
+			<div className=" w-9/10 md:w-8/10 mx-auto flex flex-col py-18 gap-y-5">
 				<div className="text-center">
 					<p className="text-[15px text-black] text-[#A3B18A]">
 						GALERI RUANGAN APARTEMEN TERBAK
 					</p>
-					<h1 className="text-[45px] font-bold">
+					<h1 className="text-[30px] md:text-[45px] font-bold">
 						Galeri Apartemen Di Indonesia
 					</h1>
 				</div>
-				<div className="flex justify-between text-[#F3ECDC]">
+				<div className="md:flex justify-between text-[#F3ECDC]">
 					<div
-						className="w-[600px] flex justify-center items-center pt-30 rounded-3xl group relative overflow-hidden"
+						className="w-[100%] md:w-[600px] flex justify-center items-center pt-30 rounded-3xl group relative overflow-hidden"
 						style={{
 							backgroundImage: `url(${bgImg})`,
 							backgroundSize: "cover",
@@ -32,7 +32,7 @@ function Gallery({ bgImg, galimg3, galimg2, galimg5, galimg4, galimg6 }) {
 							}}
 						></div>
 						{/* Text appears on hover */}
-						<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 text-center">
+						<div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 text-center py-5 md:py-0">
 							<h2 className="text-[35px] font-bold">Ruangan yang modern</h2>
 							<p className="text-[18px]">
 								tersedia fasii=litas yang memadia,memudahkan kegiatan anda
@@ -40,32 +40,34 @@ function Gallery({ bgImg, galimg3, galimg2, galimg5, galimg4, galimg6 }) {
 						</div>
 						<PiPlayCircle className="text-5xl bg-[#A3B18A] rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 " />
 					</div>
-					<img
-						src={galimg2}
-						alt=""
-						className="w-[290px] h-[300px] rounded-3xl"
-					/>
-					<img
-						src={galimg3}
-						alt=""
-						className="w-[290px] h-[300px] rounded-3xl"
-					/>
+					<div className="flex gap-5 mt-10 md:mt-0 justify-between">
+						<img
+							src={galimg2}
+							alt=""
+							className="w-[170px] h-[180px] md:w-[290px] md:h-[300px] rounded-3xl"
+						/>
+						<img
+							src={galimg3}
+							alt=""
+							className="w-[170px] h-[180px] md:w-[290px] md:h-[300px] rounded-3xl"
+						/>
+					</div>
 				</div>
-				<div className="flex justify-between">
+				<div className="flex justify-between ">
 					<img
 						src={galimg4}
 						alt=""
-						className="w-[393px] h-[300px] rounded-3xl"
+						className="w-[120px] h-[150px] md:w-[393px] md:h-[300px] rounded-3xl"
 					/>
 					<img
 						src={galimg5}
 						alt=""
-						className="w-[393px] h-[300px] rounded-3xl"
+						className="w-[120px] h-[150px] md:w-[393px] md:h-[300px] rounded-3xl"
 					/>
 					<img
 						src={galimg6}
 						alt=""
-						className="w-[393px] h-[300px] rounded-3xl"
+						className="w-[120px] h-[150px] md:w-[393px] md:h-[300px] rounded-3xl"
 					/>
 				</div>
 				<div className="text-[15px] flex items-center gap-2 mx-auto ">

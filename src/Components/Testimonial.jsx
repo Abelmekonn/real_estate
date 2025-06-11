@@ -9,10 +9,10 @@ import { FaCirclePlay } from "react-icons/fa6";
 function Testimonial() {
 	return (
 		<div className="bg-[#344E41] py-15">
-			<div className="w-8/10 mx-auto flex justify-between items-center  ">
+			<div className="w-9/10 md:w-8/10 mx-auto flex justify-between items-center  ">
 				<div>
 					<p className="text-[15px] text-[#A3B18A]">APA YANG MEREKA KATAKAN</p>
-					<h2 className="text-[#F3ECDC] text-[45px] font-bold">
+					<h2 className="text-[#F3ECDC] text-[25px] md:text-[45px] font-bold">
 						Testimoni Pengunjung Kami
 					</h2>
 				</div>
@@ -21,9 +21,13 @@ function Testimonial() {
 					<FaArrowRight />
 				</div>
 			</div>
-			<div className="w-8/10 gap-2 flex justify-between items-center  mx-auto pt-7">
+			<div className="w-9/10 md:w-8/10 gap-2 flex justify-between items-center  mx-auto pt-7">
 				<div className="relative">
-					<img src={testimg} alt="" className="w-[317px] h-[401px]" />
+					<img
+						src={testimg}
+						alt=""
+						className="w-[170px] md:w-[317px] h-[200px] md:h-[401px]"
+					/>
 					{/* black outline */}
 					<div className="absolute inset-0 z-20 bg-black/50 opacity-5"></div>
 					<div className="absolute top-1/2 left-1/2 z-50 -translate-x-1/2 -translate-y-1/2">
@@ -32,14 +36,14 @@ function Testimonial() {
 				</div>
 
 				<div
-					className="w-[923px] h-[401px] flex justify-center items-center gap-5"
+					className="w-[500px] md:w-[923px] h-[200px] md:h-[401px] flex justify-center items-center gap-5"
 					style={{
 						backgroundImage: `url(${testimg2})`,
 						backgroundCover: "cover",
 						backgroundPosition: "center",
 					}}
 				>
-					<div className=" flex flex-col justify-between w-[431px] h-[250px]  p-8 bg-[#F3ECDC] rounded-3xl">
+					<div className=" flex flex-col justify-between w-[120px] md:w-[431px]  h-[180px] md:h-[250px] text-[12px] md:text-[18px] p-2 md:p-8 bg-[#F3ECDC] rounded-3xl ">
 						<div className="flex  gap-2 text-[#F3A734]">
 							<FaStar />
 							<FaStar />
@@ -55,15 +59,15 @@ function Testimonial() {
 							<img
 								src={testimg3}
 								alt=""
-								className="w-[75px] h-[75px] rounded-4xl"
+								className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] rounded-4xl"
 							/>
-							<div className="flex flex-col space-y-1">
+							<div className="flex flex-col md:space-y-1">
 								<p className="font-semibold"> Mr.John Doe</p>
 								<p className="text-[#A3B18A]"> Mr.John Doe</p>
 							</div>
 						</div>
 					</div>
-					<div className="w-[431px] h-[280px] p-8 flex flex-col justify-between bg-[#F3ECDC] rounded-3xl">
+					<div className="w-[120px] md:w-[431px] text-[12px] md:text-[18px] h-[180px] md:h-[250px]  p-2 md:p-8 flex flex-col justify-between bg-[#F3ECDC] rounded-3xl">
 						<div className="flex gap-2 text-[#F3A734] ">
 							<FaStar />
 							<FaStar />
@@ -78,7 +82,7 @@ function Testimonial() {
 							<img
 								src={testimg4}
 								alt=""
-								className="w-[75px] h-[75px] rounded-4xl"
+								className="w-[50px] h-[50px] md:w-[75px] md:h-[75px] rounded-4xl"
 							/>
 							<div className="flex flex-col space-y-1">
 								<p className="font-semibold"> Mr.John Doe</p>

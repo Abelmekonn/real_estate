@@ -28,15 +28,15 @@ function Footer() {
 		<div className=" bg-[#344E41]">
 			<section className="w-8/10 mx-auto flex justify-between  text-[#F3ECDC] py-15 border-b-2 border-[#70726b]">
 				<div className="w-[20%]">
-					<div className="flex items-center gap-2 text-2xl">
-						<PiHouse className="text-4xl text-yellow-400" />
+					<div className="flex items-center gap-2 text-[16px] md:text-2xl">
+						<PiHouse className=" md:text-4xl text-yellow-400" />
 						<span>HOUSE.</span>
 					</div>
-					<p className="text-[15px] mt-5">
+					<p className="text-[12px] md:text-[15px] mt-5">
 						Aplikasi terbaik layanan penginapan di seluruh apartemen dan hotel
 						di Indonesia
 					</p>
-					<div className="flex gap-5  text-2xl mt-5">
+					<div className="flex gap-2 md:gap-5 text-[18px] md:text-2xl mt-5">
 						<FaFacebook />
 						<IoLogoTwitter />
 						<FaInstagram />
@@ -44,9 +44,11 @@ function Footer() {
 					</div>
 				</div>
 				{links.map((link, index) => (
-					<div key={index} className="w-[20%]">
-						<h2 className="font-bold text-[25px]">{link.title}</h2>
-						<ul className="mt-3 space-y-2">
+					<div key={index} className="w-[21%]">
+						<h2 className="font-bold text-[16px] md:text-[25px]">
+							{link.title}
+						</h2>
+						<ul className="mt-3 space-y-2 text-[12px] md:text-[15px]">
 							{link.data.map((item, idx) => (
 								<li key={idx} className="flex items-center gap-2">
 									<IoMdArrowDropright />
@@ -58,18 +60,20 @@ function Footer() {
 				))}
 
 				<div className="w-[20%]">
-					<h2 className="text-[25px] font-bold mb-3">Tetap bersama kami</h2>
+					<h2 className="text-[16px] md:text-[25px] font-bold mb-3">
+						Tetap bersama kami
+					</h2>
 					<div className="flex items-center gap-2 ">
-						<FaLocationDot className="text-[20px]" />
-						<p className="text-[15px]">Jakarta, Indonesia</p>
+						<FaLocationDot className="text-[12px] md:text-[20px]" />
+						<p className="text-[12px] md:text-[15px]">Jakarta, Indonesia</p>
 					</div>
 					<div className="flex items-center gap-2 mt-3">
-						<IoMdMail className="text-[20px]" />
-						<p className="text-[15px]">Hello@Email.com</p>
+						<IoMdMail className="text-[12px] md:text-[20px]" />
+						<p className="text-[12px] md:text-[15px]">Hello@Email.com</p>
 					</div>
 					<div className="flex items-center gap-2 mt-3">
-						<BsFillTelephoneFill className="text-[20px]" />
-						<p className="text-[15px]">+62 123 4567 890</p>
+						<BsFillTelephoneFill className="text-[15px] md:text-[20px]" />
+						<p className="text-[12px] md:text-[15px]">+62 123 4567 890</p>
 					</div>
 				</div>
 			</section>

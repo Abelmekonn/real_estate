@@ -26,7 +26,7 @@ const data = [
 		image: blogimg3,
 		button1: "Sugni",
 		button2: "Adem",
-		title: "Apartemen Terbaik Di Tengah Kota Jakarta",
+		title: "Apartemen Terbaik Di Tengah Kota ",
 		description: "Kamu keluarga pada pengen dong punya Rumah Yang bi",
 		articleLink: "BACA ARTIKEL",
 		articleIcon: <FaArrowRight />,
@@ -39,7 +39,9 @@ function Blog() {
 			<div className="flex justify-between w-full ">
 				<div>
 					<p className="text-[15px] text-[#A3B18A]">BACA BLOG KAMI</p>
-					<h1 className="text-[45px] font-bold">Postingan Artikel Seru</h1>
+					<h1 className="text-[30px] md:text-[45px] font-bold">
+						Postingan Artikel Seru
+					</h1>
 				</div>
 				<div className="flex gap-2 items-center text-[#588157] text-[15px]">
 					<p>LIHAT SEMU BLOG</p>
@@ -48,29 +50,36 @@ function Blog() {
 			</div>
 			<div className="flex justify-between ">
 				{data.map((item, index) => (
-					<div key={index} className="flex flex-col  items-center py-3 ">
-						<div className="w-[393px]">
+					<div
+						key={index}
+						className="flex flex-col  items-center py-3 px-1 md:px-0"
+					>
+						<div className="w-[110px] md:w-[393px]">
 							<img
 								src={item.image}
 								alt=""
-								className="w-[393px] h-[250px] rounded-t-3xl"
+								className="w-[130px] h-[110px] md:w-[393px] md:h-[250px] rounded-t-3xl"
 							/>
 						</div>
-						<div className="w-[393px] px-10 bg-white rounded-b-3xl pb-7">
-							<div className="flex gap-3 items-center mt-7">
+						<div className="w-[110px] md:w-[393px] md:px-10 bg-white rounded-b-3xl pb-7">
+							<div className="hidden md:flex gap-3 items-center mt-7">
 								<button className="  px-5 py-2 rounded-3xl bg-[#3A5A40] text-white text-[15px]">
 									{item.button1}
 								</button>
 								<button
-									className="px-5 py-2 rounded-3xl bg-[#A3B18A] text-white text-[15px]
+									className=" px-5 py-2 rounded-3xl bg-[#A3B18A] text-white text-[15px]
                         "
 								>
 									{item.button2}
 								</button>
 							</div>
-							<h2 className="text-[25px] font-bold mt-5  ">{item.title}</h2>
-							<p className="text-[#6E6E6E] text-[18px]">{item.description}</p>
-							<div className="flex gap-2 items-center text-[#588157] text-[15px] mt-5">
+							<h2 className="text-[14px] md:text-[25px] text-center md:text-left font-bold mt-5  ">
+								{item.title}
+							</h2>
+							<p className="text-[#6E6E6E] hidden md:block md:text-[18px] ">
+								{item.description}
+							</p>
+							<div className="flex gap-2 items-center text-[#588157] text-[11px] md:text-[15px] mt-5">
 								<p>{item.articleLink}</p>
 								{item.articleIcon}
 							</div>

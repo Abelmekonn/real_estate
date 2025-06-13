@@ -59,13 +59,15 @@ import { mainBoxes } from "../Constant/data";
 
 function Services({ texts, isHome, bottomText }) {
 	return (
-		<div className="w-8/10 mx-auto">
+		<div className="w-9/10 md:w-8/10 mx-auto">
 			{texts && (
 				<div className="flex flex-col items-center justify-center text-center ">
 					<p className="text-[#A3B18A] text-[15px]">
 						LAYANAN YANG KAMI BERIKAN
 					</p>
-					<h1 className="text-[45px] font-bold">Layanan Yang Mendukung</h1>
+					<h1 className="text-[30px] md:text-[45px] font-bold">
+						Layanan Yang Mendukung
+					</h1>
 				</div>
 			)}
 			<div className="flex justify-center md:justify-between flex-wrap items-center space-y-5 mt-7">

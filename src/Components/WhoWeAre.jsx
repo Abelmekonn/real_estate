@@ -6,11 +6,11 @@ import image3 from "../assets/Images/image3.jpg";
 
 function WhoWeAre() {
 	return (
-		<div className="bg-[#F3ECDC] flex flex-col min-h-[702px] items-center justify-center  ">
-			<div className="flex justify-between items-center w-8/10 mx-auto">
+		<div className="bg-[#F3ECDC] flex flex-col min-h-[702px] items-center justify-center w-9/10 md:w-8/10 mx-auto  ">
+			<div className="flex justify-between items-center ">
 				<div className="w-5/10">
 					<p className="text-[11px] text-[#A3B18A]">LAYANAN KAMI</p>
-					<h2 className="font-bold text-5xl">
+					<h2 className="font-bold text-3xl md:text-5xl">
 						Apartemen impian dan ruangan yang modern.
 					</h2>
 				</div>
@@ -19,16 +19,16 @@ function WhoWeAre() {
 					<FaArrowRightLong />
 				</div>
 			</div>
-			<div className="flex justify-between items-center w-8/10 mx-auto mt-10 ">
-				<div className="  bg-[#344E41]  rounded-3xl w-[417px] h-[305px]   ">
-					<div className="text-white  w-[50%] h-full flex flex-col justify-center items-center gap-5 p-5 p-5">
+			<div className="md:flex justify-between items-center  mx-auto mt-10 ">
+				<div className="  bg-[#344E41]  rounded-3xl md:w-[417px] h-[250px] md:h-[305px]   ">
+					<div className="text-white  md:w-[50%] h-full flex flex-col justify-center items-center gap-5 p-5 ">
 						<i className="">
 							"Layanan apartemen paling terbaik di indonesia, suka banget.."
 						</i>
 						<p className="text-2xl">Najwa Shilab</p>
 					</div>
 				</div>
-				<div className="flex  gap-5 -ml-[100px]">
+				<div className="flex  gap-5 md:-ml-[100px] mt-7 md:mt-0">
 					<div className="">
 						<img
 							src={image1}

@@ -59,7 +59,7 @@ import { mainBoxes } from "../Constant/data";
 
 function Services({ texts, isHome, bottomText }) {
 	return (
-		<div className="w-9/10 md:w-8/10 mx-auto">
+		<div className="w-9/10 md:w-8/10 mx-auto pb-10">
 			{texts && (
 				<div className="flex flex-col items-center justify-center text-center ">
 					<p className="text-[#A3B18A] text-[15px]">
@@ -74,11 +74,11 @@ function Services({ texts, isHome, bottomText }) {
 				{(isHome ? mainBoxes.slice(0, 3) : mainBoxes).map((box, idx) => (
 					<div
 						key={idx}
-						className={`w-[393px] h-[357px] rounded-3xl flex items-center justify-center bg-[${box.bg}] hover:bg-[#F9F9F9] transition-all duration-300 ease-in-out`}
-						// style={{ background: box.bg }}
+						className={`w-[393px] h-[357px] rounded-3xl flex items-center justify-center  ${box.textColor} bg-[${box.bg}] hover:bg-[#344E41] hover:text-[#FFF] bg-[#F9F9F9] transition-all duration-300 ease-in-out cursor-pointer`}
+					// style={{ background: box.bg }}
 					>
 						<div
-							className={`w-[70%] flex flex-col justify-center items-center text-center gap-7 p-5 mt-5 ${box.textColor}`}
+							className={`w-[70%] flex flex-col justify-center items-center text-center gap-7 p-5 mt-5`}
 						>
 							{box.icon}
 							<p className="text-[25px] font-bold">{box.title}</p>
@@ -98,7 +98,7 @@ function Services({ texts, isHome, bottomText }) {
 			</div>
 
 			{bottomText && (
-				<div className="text-center flex items-center justify-center gap-2 text-[15px] text-[#588157] ">
+				<div className="text-center flex items-center justify-center gap-2 text-[15px] text-[#588157] mt-10">
 					<span className="text-black">LIHAT SELURUH LAYANAN</span>
 					<span className="text-[#588157]"> LIHAT SELENGKAPNYA</span>
 					<span>

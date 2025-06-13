@@ -6,9 +6,9 @@ import image3 from "../assets/Images/image3.jpg";
 
 function WhoWeAre() {
 	return (
-		<div className="bg-[#F3ECDC] flex flex-col min-h-[702px] items-center justify-center w-9/10 md:w-8/10 mx-auto  ">
-			<div className="flex justify-between items-center ">
-				<div className="w-5/10">
+		<div className="bg-[#F3ECDC] flex flex-col min-h-[702px] items-center justify-center w-9/10 md:w-8/10 mx-auto  py-15">
+			<div className="flex justify-between items-center gap-6">
+				<div className=" md:w-5/10">
 					<p className="text-[11px] text-[#A3B18A]">LAYANAN KAMI</p>
 					<h2 className="font-bold text-3xl md:text-5xl">
 						Apartemen impian dan ruangan yang modern.

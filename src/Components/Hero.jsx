@@ -18,7 +18,7 @@ function Hero() {
 			<div className="w-8/10 flex justify-between  mx-auto mb-20 z-30 ">
 				<div className="flex flex-col justify-between  mx-auto gap-5 ">
 					<p className="text-[#F3ECDC]">
-						TEMPATNYA SEWA APARTMEN TERBIK INDONESIA
+						Best Apartment Rental in Ethiopia
 					</p>
 					<h1 className="text-5xl font-bold">
 						<span className="text-[#F3ECDC]">Ayo,</span>
@@ -35,7 +35,7 @@ function Hero() {
 						<Button text="SEKARANG" isGreen={false} />
 					</div>
 				</div>
-				<div className="w-9/10 flex justify-center items-center text-5xl text-[#A3B18A]">
+				<div className="w-9/10 hidden md:flex justify-center items-center text-5xl text-[#A3B18A]">
 					<FaPlayCircle className="bg-white rounded-full" />
 				</div>
 			</div>

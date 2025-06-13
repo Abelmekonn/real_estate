@@ -59,43 +59,78 @@ function Header() {
 			</div>
 
 			<div
-				className={`flex justify-between items-center py-4 w-9/10 mx-auto px-4 text-[#F3ECDC] ${
-					scrolled ? "bg-[#344E41] rounded-br-3xl rounded-bl-3xl" : ""
-				}`}
+				className={`flex justify-between items-center py-4 w-[95%] md:w-9/10 mx-auto px-4 text-[#F3ECDC] ${scrolled ? "bg-[#344E41] rounded-br-3xl rounded-bl-3xl" : ""
+					}`}
 			>
 				<div className="flex items-center gap-2 text-2xl">
 					<PiHouse className="text-4xl text-yellow-400" />
 					<span>HOUSE.</span>
 				</div>
-				<ul
-					className={`md:flex gap-7 text-300 ${
-						isMobileMenuOpen
-							? "md:hidden flex absolute flex-col top-40 right-0 bg-[#588157] w-[50%] p-10 rounded-bl-3xl rounded-br-3xl navbar"
-							: "hidden"
-					} md:visible`}
-				>
-					<li>
-						<Link to="/">HOME</Link>
-					</li>
-					<li>
-						<Link to="/about">ABOUT US</Link>
-					</li>
-					<li className="flex items-center gap-2">
-						<Link to="/service" className="flex items-center gap-2">
-							CHECK IN CHECK OUT <MdKeyboardArrowDown />
-						</Link>
-					</li>
-					<li className="flex items-center gap-2">
-						BLOG <MdKeyboardArrowDown />
-					</li>
-				</ul>
-				<div className="flex items-center gap-2">
-					<div className="hidden md:flex gap-5">
+				{/* Desktop Navigation */}
+				<div className="hidden md:flex gap-7 text-300 items-center">
+					<ul className="flex gap-7">
+						<li>
+							<Link to="/">HOME</Link>
+						</li>
+						<li>
+							<Link to="/about">ABOUT US</Link>
+						</li>
+						<li>
+							<Link to="/service">Services</Link>
+						</li>
+						<li className="flex items-center gap-2">
+							<Link to="/" className="flex items-center gap-2">
+								CHECK IN CHECK OUT <MdKeyboardArrowDown />
+							</Link>
+						</li>
+						<li className="flex items-center gap-2">
+							BLOG <MdKeyboardArrowDown />
+						</li>
+					</ul>
+					<div className="ml-5">
 						<Button text="GET STARTED" />
 					</div>
-					<div onClick={toggleMobileMenu} className="text-4xl md:hidden">
-						{isMobileMenuOpen ? <HiX /> : <HiOutlineBars2 />}
-					</div>
+				</div>
+				{/* Mobile Navigation */}
+				<div className="md:hidden flex flex-col relative items-center gap-2">
+					{/* Hamburger icon only when menu is closed */}
+					{!isMobileMenuOpen && (
+						<div onClick={toggleMobileMenu} className="text-4xl cursor-pointer z-50">
+							<HiOutlineBars2 />
+						</div>
+					)}
+					{isMobileMenuOpen && (
+						<div className="fixed inset-0 bg-[#344E41]/90 z-40 flex flex-col items-end">
+							{/* Close icon at top right */}
+							<div className="absolute top-6 right-6 text-4xl cursor-pointer z-50 text-white" onClick={toggleMobileMenu}>
+								<HiX />
+							</div>
+							<div className="w-3/4 h-full bg-[#588157] p-10 flex flex-col gap-7 rounded-bl-3xl rounded-br-3xl shadow-lg ml-auto">
+								<ul className="flex flex-col gap-7 text-300 mt-10">
+									<li>
+										<Link to="/" onClick={toggleMobileMenu}>HOME</Link>
+									</li>
+									<li>
+										<Link to="/about" onClick={toggleMobileMenu}>ABOUT US</Link>
+									</li>
+									<li>
+										<Link to="/service" onClick={toggleMobileMenu}>Services</Link>
+									</li>
+									<li className="flex items-center gap-2">
+										<Link to="/" className="flex items-center gap-2" onClick={toggleMobileMenu}>
+											CHECK IN CHECK OUT <MdKeyboardArrowDown />
+										</Link>
+									</li>
+									<li className="flex items-center gap-2">
+										BLOG <MdKeyboardArrowDown />
+									</li>
+								</ul>
+								<div className="mt-10">
+									<Button text="GET STARTED" />
+								</div>
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</div>

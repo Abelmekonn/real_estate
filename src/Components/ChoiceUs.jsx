@@ -7,7 +7,7 @@ import { FaRegCirclePlay } from "react-icons/fa6";
 function ChoiceUs({ title, img2, bottomText, lastText, rightTop, list }) {
 	return (
 		<div className="  mt-7  py-18 bg-[#344E41] text-[#F3ECDC]">
-			<div className="w-9/10 md:w-8/10 md:flex mx-auto justify-between">
+			<div className="w-9/10 md:w-8/10 md:flex mx-auto justify-between md:gap-15">
 				<div className="md:w-[70%]">
 					<p className="text-[#A3B18A] text-[15px] text-center md:text-left">
 						KENAPA HARUS GUNAKAN LAYANAN KAMI
@@ -15,12 +15,12 @@ function ChoiceUs({ title, img2, bottomText, lastText, rightTop, list }) {
 					<h1 className="text-[30px] md:text-[45px] font-bold text-center md:text-left">
 						{title}
 					</h1>
-					<div className="  flex  items-center gap-10 mt-20 justify-between md:justify-between-none ">
+					<div className="md:flex space-y-8  items-center gap-10 mt-20 justify-between md:justify-between-none ">
 						<div className="relative ">
 							<img
 								src={img2}
 								alt=""
-								className="w-[300px] md:w-[376px] h-[250px] md:h-[302px] rounded-3xl"
+								className="w-full md:w-[376px] h-[250px] md:h-[302px] rounded-3xl"
 							/>
 							<FaRegCirclePlay className="text-5xl absolute top-28 md:top-30 right-[50%] md:right-45 bg-[#A3B18A] rounded-3xl" />
 						</div>

@@ -76,7 +76,7 @@ function Header() {
 							<Link to="/about">ABOUT US</Link>
 						</li>
 						<li>
-							<Link to="/service">Services</Link>
+							<Link to="/service">SERVICES</Link>
 						</li>
 						<li className="flex items-center gap-2">
 							<Link to="/" className="flex items-center gap-2">

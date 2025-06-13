@@ -25,18 +25,18 @@ const data = [
 
 function StepWork() {
 	return (
-		<div className="w-8/10 mx-auto py-15">
-			<div className=" flex flex-col items-center ">
+		<div className="w-9/10 md:w-8/10 mx-auto py-15">
+			<div className=" flex flex-col items-center  ">
 				<p className="text-[#A3B18A] text-[15px]">
 					BAGAIMANA CARE KERJA LAYANAN KAMI
 				</p>
-				<h1 className="text-[45px] font-bold">
+				<h1 className="text-[30px] md:text-[45px] font-bold text-center">
 					Kami Memberikan Langkah Kerja Yang Mudah
 				</h1>
 			</div>
-			<div className="flex justify-between items-center mt-10">
+			<div className="flex flex-col md:flex-row justify-between items-center mt-10 gap-10">
 				{data.map((item, index) => (
-					<div className="w-[18%] text-center">
+					<div className="w-full md:w-[18%] text-center">
 						<p className="text-[35px] text-[#A3B18A] mb-4">{item.number}</p>
 						<h2 className="font-semibold text-[21px] mb-2">{item.title}</h2>
 						<p className="text-[18px] text-[#6E6E6E]">{item.description}</p>

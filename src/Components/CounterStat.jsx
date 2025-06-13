@@ -28,31 +28,31 @@ function Counter({ end, suffix = "", duration = 2000 }) {
 
 function CounterStat() {
 	return (
-		<div className="bg-[#344E41] min-h-[209px] flex justify-center items-center">
-			<div className="flex justify-between items-center w-9/10 md:w-8/10 mx-auto  text-[#F3ECDC]">
-				<div className="">
-					<div className="mb-2 text-2xl md:text-5xl font-bold">
+		<div className="bg-[#344E41] min-h-[209px] flex justify-center items-center py-8 px-2">
+			<div className="flex flex-col md:flex-row justify-between items-center w-full max-w-5xl mx-auto text-[#F3ECDC] gap-6 md:gap-0">
+				<div className="flex flex-col items-center md:items-start">
+					<div className="mb-1 text-3xl sm:text-4xl md:text-5xl font-bold">
 						<Counter end={380} /> <sup>+</sup>
 					</div>
-					<div>Apartmen Terbaik</div>
+					<div className="text-base sm:text-lg md:text-xl">Apartmen Terbaik</div>
 				</div>
-				<div>
-					<div className="mb-2 text-2xl md:text-5xl font-bold">
+				<div className="flex flex-col items-center md:items-start">
+					<div className="mb-1 text-3xl sm:text-4xl md:text-5xl font-bold">
 						<Counter end={56} /> <sup>+</sup>
 					</div>
-					<div>Partner Kami</div>
+					<div className="text-base sm:text-lg md:text-xl">Partner Kami</div>
 				</div>
-				<div>
-					<div className="mb-2 text-2xl md:text-5xl font-bold">
+				<div className="flex flex-col items-center md:items-start">
+					<div className="mb-1 text-3xl sm:text-4xl md:text-5xl font-bold">
 						<Counter end={78000} suffix="K" /> <sup>+</sup>
 					</div>
-					<div>Customer Suka</div>
+					<div className="text-base sm:text-lg md:text-xl">Customer Suka</div>
 				</div>
-				<div>
-					<div className="mb-2 text-2xl md:text-5xl font-bold">
+				<div className="flex flex-col items-center md:items-start">
+					<div className="mb-1 text-3xl sm:text-4xl md:text-5xl font-bold">
 						<Counter end={15} suffix="th" /> <sup>+</sup>
 					</div>
-					<div>Pengalaman Terbaik</div>
+					<div className="text-base sm:text-lg md:text-xl">Pengalaman Terbaik</div>
 				</div>
 			</div>
 		</div>

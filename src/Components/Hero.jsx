@@ -27,8 +27,8 @@ function Hero() {
 						<span className="text-[#588157]">Anda Disini..</span>
 					</h1>
 					<p className="text-[#F3ECDC]">
-						Rumah Impian Anda, Hanya Satu Klik Jauhnya: Temukan Kenyamanan dalam
-						Setiap Apartemen D Indonesia
+						Apartments that makes you feel at home
+						Find your dream apartment here
 					</p>
 					<div className="flex  gap-5 items-center ">
 						<Button text="LIHAT SELENGKAPNYA" isGreen={true} />

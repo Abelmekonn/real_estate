@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+body {
+	background-color: #f3ecdc;
+}
+.hero {
+	background: linear-gradient(
+		90deg,
+		rgba(52, 78, 65, 0.95) 32.29%,
+		rgba(0, 0, 0, 0.13) 100%
+	);
+}
+.navbar {
+	background: rgba(144, 236, 46, 0.3);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(6.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.lowerHeader {
+	background: rgba(255, 255, 255, 0.15);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(3.5px);
+	-webkit-backdrop-filter: blur(3.5px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}

@@ -74,11 +74,12 @@ function Services({ texts, isHome, bottomText }) {
 				{(isHome ? mainBoxes.slice(0, 3) : mainBoxes).map((box, idx) => (
 					<div
 						key={idx}
-						className={`w-[393px] h-[357px] rounded-3xl flex items-center justify-center bg-[${box.bg}] hover:bg-[#F9F9F9] transition-all duration-300 ease-in-out`}
+						className={`w-[393px] h-[357px] rounded-3xl flex items-center justify-center bg-[${box.bg}] hover:bg-[#344E41] ${box.textColor} hover:text-white
+						 bg-[#F9F9F9] transition-all duration-300 ease-in-out`}
 						// style={{ background: box.bg }}
 					>
 						<div
-							className={`w-[70%] flex flex-col justify-center items-center text-center gap-7 p-5 mt-5 ${box.textColor}`}
+							className={`w-[70%] flex flex-col justify-center items-center text-center gap-7 p-5 mt-5 `}
 						>
 							{box.icon}
 							<p className="text-[25px] font-bold">{box.title}</p>

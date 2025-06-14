@@ -55,7 +55,7 @@ function ChoiceUs({ title, img2, bottomText, lastText, rightTop, list }) {
 					</div>
 				</div>
 				<div className="md:w-[40%] bg-[#3A5A40] rounded-3xl">
-					<div className="w-[90%] flex flex-col justify-center h-full gap-y-10 mx-auto mt-10 md:mt-0 py-5 md:py-0">
+					<div className="w-[90%] flex flex-col justify-center  gap-y-10 mx-auto mt-10 md:mt-0 py-5 md:py-0">
 						<i>{rightTop}</i>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit

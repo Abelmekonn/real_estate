@@ -43,7 +43,7 @@ function Testimonial() {
 						backgroundPosition: "center",
 					}}
 				>
-					<div className=" flex flex-col justify-between w-[120px] md:w-[431px]  h-[180px] md:h-[250px] text-[12px] md:text-[18px] p-2 md:p-8 bg-[#F3ECDC] rounded-3xl ">
+					<div className=" hidden md:flex flex-col justify-between w-[120px] md:w-[431px]  h-[180px] md:h-[250px] text-[12px] md:text-[18px] p-2 md:p-8 bg-[#F3ECDC] rounded-3xl ">
 						<div className="flex  gap-2 text-[#F3A734]">
 							<FaStar />
 							<FaStar />
@@ -67,7 +67,7 @@ function Testimonial() {
 							</div>
 						</div>
 					</div>
-					<div className="w-[120px] md:w-[431px] text-[12px] md:text-[18px] h-[180px] md:h-[250px]  p-2 md:p-8 flex flex-col justify-between bg-[#F3ECDC] rounded-3xl">
+					<div className="hidden  w-[120px] md:w-[431px] text-[12px] md:text-[18px] h-[180px] md:h-[250px]  p-2 md:p-8 md:flex flex-col justify-between bg-[#F3ECDC] rounded-3xl">
 						<div className="flex gap-2 text-[#F3A734] ">
 							<FaStar />
 							<FaStar />

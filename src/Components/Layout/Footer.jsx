@@ -77,7 +77,7 @@ function Footer() {
 					</div>
 				</div>
 			</section>
-			<p className="text-[#F3ECDC] text-center py-5 text-[15px]">
+			<p className="text-[#F3ECDC] text-center py-5 text-[12px] md:text-[15px]">
 				COPYGIRHT DIESNATALIS
 			</p>
 		</div>

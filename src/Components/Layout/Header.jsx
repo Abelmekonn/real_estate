@@ -80,8 +80,11 @@ function Header() {
 					<li>
 						<Link to="/about">ABOUT US</Link>
 					</li>
+					<li>
+						<Link to="/service">SERVICE</Link>
+					</li>
 					<li className="flex items-center gap-2">
-						<Link to="/service" className="flex items-center gap-2">
+						<Link to="/contact" className="flex items-center gap-2">
 							CHECK IN CHECK OUT <MdKeyboardArrowDown />
 						</Link>
 					</li>

@@ -25,12 +25,12 @@ const data = [
 
 function StepWork() {
 	return (
-		<div className="w-8/10 mx-auto py-15">
+		<div className="w-9/10 md:w-8/10 mx-auto py-15">
 			<div className=" flex flex-col items-center ">
 				<p className="text-[#A3B18A] text-[15px]">
 					BAGAIMANA CARE KERJA LAYANAN KAMI
 				</p>
-				<h1 className="text-[45px] font-bold">
+				<h1 className="text-[30px] md:text-[45px] font-bold">
 					Kami Memberikan Langkah Kerja Yang Mudah
 				</h1>
 			</div>

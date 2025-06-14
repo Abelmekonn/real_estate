@@ -35,7 +35,7 @@ const data = [
 
 function Blog() {
 	return (
-		<div className="w-8/10 mx-auto  flex flex-col justify-between gap-10 py-15">
+		<div className="w-9/10 md:w-8/10 mx-auto  flex flex-col justify-between gap-10 py-15">
 			<div className="flex justify-between w-full ">
 				<div>
 					<p className="text-[15px] text-[#A3B18A]">BACA BLOG KAMI</p>
@@ -48,21 +48,21 @@ function Blog() {
 					<FaArrowRight />
 				</div>
 			</div>
-			<div className="flex justify-between ">
+			<div className="md:flex justify-between ">
 				{data.map((item, index) => (
 					<div
 						key={index}
 						className="flex flex-col  items-center py-3 px-1 md:px-0"
 					>
-						<div className="w-[110px] md:w-[393px]">
+						<div className="w-[393px]">
 							<img
 								src={item.image}
 								alt=""
-								className="w-[130px] h-[110px] md:w-[393px] md:h-[250px] rounded-t-3xl"
+								className="w-[393px] h-[250px] rounded-t-3xl"
 							/>
 						</div>
-						<div className="w-[110px] md:w-[393px] md:px-10 bg-white rounded-b-3xl pb-7">
-							<div className="hidden md:flex gap-3 items-center mt-7">
+						<div className="w-[393px] px-10 bg-white rounded-b-3xl pb-7">
+							<div className="flex gap-3 items-center mt-7">
 								<button className="  px-5 py-2 rounded-3xl bg-[#3A5A40] text-white text-[15px]">
 									{item.button1}
 								</button>
@@ -73,12 +73,8 @@ function Blog() {
 									{item.button2}
 								</button>
 							</div>
-							<h2 className="text-[14px] md:text-[25px] text-center md:text-left font-bold mt-5  ">
-								{item.title}
-							</h2>
-							<p className="text-[#6E6E6E] hidden md:block md:text-[18px] ">
-								{item.description}
-							</p>
+							<h2 className="text-[25px]  font-bold mt-5  ">{item.title}</h2>
+							<p className="text-[#6E6E6E]  text-[18px] ">{item.description}</p>
 							<div className="flex gap-2 items-center text-[#588157] text-[11px] md:text-[15px] mt-5">
 								<p>{item.articleLink}</p>
 								{item.articleIcon}

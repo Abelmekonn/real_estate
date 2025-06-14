@@ -10,6 +10,15 @@ import galimg4 from "../assets/Images/gallerybuild4.jpg";
 import galimg5 from "../assets/Images/gallerybuid5.jpg";
 import galimg6 from "../assets/Images/gallerybuil6.jpg";
 import CallAction from "../Components/CallAction";
+import ChoiceUs from "../Components/ChoiceUs";
+import choiceimg from "../assets/Images/choiceimg4.jpg";
+
+const listData = [
+	"24 Hour Consultation",
+	"Certification Team",
+	"More Office Branch",
+	"Best Work Result",
+];
 
 function Service() {
 	return (
@@ -28,6 +37,14 @@ function Service() {
 				img={img3}
 			/>
 			<Services additionalBoxes={true} />
+			<ChoiceUs
+				img2={choiceimg}
+				list={listData}
+				title="Kami Memberikan Hasil Layanan Terbaik Untuk Apartemen Anda"
+				bottomText="Free Consultation"
+				lastText="tersedia konsultasi terbaik"
+				rightTop="Fasilitas memadai tempat yang modern"
+			/>
 			<Gallery
 				bgImg={bgImg}
 				galimg2={galimg2}

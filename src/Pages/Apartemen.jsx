@@ -4,6 +4,7 @@ import NewHero from "../Components/Heros/NewHero";
 import ChoiceUs from "../Components/ChoiceUs";
 import choiceimg3 from "../assets/Images/choiceimg3.jpg";
 import CallAction from "../Components/CallAction";
+import ListHotel from "../Components/ListHotel";
 
 const listData = [
 	"24 Hour Consultation",
@@ -22,6 +23,7 @@ function Apartemen() {
 				link={true}
 				img={img5}
 			/>
+			<ListHotel />
 			<ChoiceUs
 				title="Kami Memberikan Hasil Layanan Terbaik Untuk Penginapan Anda"
 				img2={choiceimg3}

@@ -14,7 +14,7 @@ function Hero() {
 				backgroundRepeat: "no-repeat",
 			}}
 		>
-			<div className="absolute h-full w-full hero "></div>
+			<div className="absolute h-full w-full hero  "></div>
 			<div className="w-8/10 flex justify-between  mx-auto mb-20 z-30 ">
 				<div className="flex flex-col justify-between  mx-auto gap-5 ">
 					<p className="text-[#F3ECDC]">

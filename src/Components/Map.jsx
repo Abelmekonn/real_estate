@@ -1,12 +1,17 @@
 import React from "react";
-import contactimage from "../assets/Images/contactimg.jpg";
 
-function Map() {
+function Map({ location }) {
 	return (
-		<div className="w-9/10 md:w-8/10 mx-auto py-15">
-			<div>
-				<img src={contactimage} alt="" className="w-[1240px] h-[350px]" />
-			</div>
+		<div className="space-y-3 hidden md:block">
+			<h1 className="text-[#588157] text-[30px] md:text-[55px] md:text-center font-semibold  ">
+				Location
+			</h1>
+
+			<iframe
+				src={location}
+				frameborder="0"
+				className="w-[397px] h-[600px] md:h-[900px] border-8 border-white rounded-3xl"
+			></iframe>
 		</div>
 	);
 }

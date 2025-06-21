@@ -2,8 +2,7 @@ import React from "react";
 import NewHero from "../Components/Heros/NewHero";
 import img4 from "../assets/Images/img4.jpg";
 import ContactForm from "../Components/ContactForm";
-import Map from "../Components/Map";
-
+import ContactImg from "../Components/ContactImg";
 function Contact() {
 	return (
 		<div>
@@ -21,7 +20,7 @@ function Contact() {
 				img={img4}
 			/>
 			<ContactForm />
-			<Map />
+			<ContactImg />
 		</div>
 	);
 }

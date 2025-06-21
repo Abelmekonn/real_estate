@@ -6,15 +6,15 @@ import { MdEmail } from "react-icons/md";
 
 function ContactForm() {
 	return (
-		<div className="w-9/10 md:w-8/10 mx-auto py-10 flex  items-center gap-10 justify-between">
-			<div className="w-[49%] bg-[#F9F9F9] p-10 rounded-3xl shadow-xl flex flex-col gap-5 ">
-				<h1 className="text-[45px] font-semibold">Contact Us</h1>
+		<div className="w-9/10 md:w-8/10 mx-auto py-10 md:flex  items-center gap-10 justify-between">
+			<div className=" bg-[#F9F9F9] p-10 rounded-3xl shadow-xl flex flex-col gap-5 ">
+				<h1 className="text-[30px] md:text-[45px] font-semibold">Contact Us</h1>
 				<p className="text-[#6E6E6E] text-[18px] ">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
 					eiusmod tempor incididunt ut labore et dolore magna aliqua.
 				</p>
 				<form action="" className="flex flex-col gap-5 text-[17px]">
-					<div className="md:flex justify-between gap-5 ">
+					<div className="flex justify-between gap-5 ">
 						<div className="flex flex-col gap-2">
 							<label htmlFor="name" className="px-2">
 								Name
@@ -42,7 +42,7 @@ function ContactForm() {
 							/>
 						</div>
 					</div>
-					<div className="md:flex justify-between gap-5">
+					<div className="flex justify-between gap-5">
 						<div className="flex flex-col gap-2">
 							<label htmlFor="email" className="px-2">
 								Email Address
@@ -86,7 +86,7 @@ function ContactForm() {
 					<Button text="Send Message" isGreen={true} />
 				</form>
 			</div>
-			<div className="w-[49%] flex flex-col gap-5 p-10  ">
+			<div className=" flex flex-col gap-5 p-10  ">
 				<p className="text-[15px] text-[#A3B18A]">TETEB BERSAMA KAMI</p>
 				<h2 className="font-bold text-[30px] md:text-[45px]">Hubungi kami</h2>
 				<p className="text-[#6E6E6E] text-[18px]">
